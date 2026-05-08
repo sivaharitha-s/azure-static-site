@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Azure Static Website</title>
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:100px;
+}
+button{
+padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Welcome to Azure Static Website</h1>
+
+<input type="number" id="a">
+<input type="number" id="b">
+
+<button onclick="add()">Add</button>
+
+<h2 id="result"></h2>
+
+<script>
+function add(){
+
+let a = Number(document.getElementById("a").value);
+let b = Number(document.getElementById("b").value);
+
+document.getElementById("result").innerHTML = a+b;
+
+}
+</script>
+
+</body>
+</html>
